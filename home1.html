@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keep Calm</title>
+    <link rel="shortcut icon" href="./assets/logos/favicon_bota_fora.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --White: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        place-content: center;
+        gap: 26px;
+      }
+      .product-card {
+        width: 240px;
+      }
+      .product-card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .product-info figure {
+        margin: 0;
+      }
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+      }
+      .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+      .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--very-light-pink);
+      }
+      @media (max-width: 640px) {
+        .cards-container {
+          grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .product-card {
+          width: 140px;
+        }
+        .product-card img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="cards-container">
+        <div class="product-card">
+          <img src="./assets/images/oil.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$15,00</p>
+              <p>Natural Oils</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/candle.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$20,00</p>
+              <p>Soy Candle</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/plant.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$25,00</p>
+              <p>Plant</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/incense.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$25,00</p>
+              <p>Zen Incense Holder</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/teapot.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$59,00</p>
+              <p>Japanese Teapot</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/sketchbook.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$49,00</p>
+              <p>Leather Sketchbook</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/meditation.png" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$79,00</p>
+              <p>Clock for meditation</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/diffusor.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$56,00</p>
+              <p>Esential Oil Diffuser</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/stones.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$20,00</p>
+              <p>Volcanic stones</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/puzzle.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$35,00</p>
+              <p>Wooden Puzzle 3D</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/yoga-wheel.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$29,00</p>
+              <p>Yoga & Pilates Wheel</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/wooden-briefcase.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$29,00</p>
+              <p>Wooden Briefcase</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/projector.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$29,00</p>
+              <p>Projector with white noises</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/garden.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$39,00</p>
+              <p>Zen Garden Set</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/japa-mala.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$29,00</p>
+              <p>Buddhist Japa Mala Beads</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/tibetan-singing-bowl.jpg" alt="" />
+          <div class="product-info">
+            <div>
+              <p>$45,00</p>
+              <p>Tibetan Singing Bowl</p>
+            </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
