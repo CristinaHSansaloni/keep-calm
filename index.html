@@ -15,324 +15,103 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <nav>
-      <img src="./assets/icons/icon_menu.svg" alt="menu" class="ham-menu" />
-      <div class="navbar-left">
-        <img
-          src="./assets/logos/logo_yard_sale.svg"
-          alt="logo"
-          class="nav-logo"
-        />
-        <ul>
-          <li><a href="/">All</a></li>
-          <li><a href="/">Meditation</a></li>
-          <li><a href="/">House</a></li>
-          <li><a href="/">Sport</a></li>
-          <li><a href="/">Hobbies</a></li>
-          <li><a href="/">Others</a></li>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <ul>
-          <li class="navbar-email">example@example@gmail.com</li>
-          <li class="navbar-shopping-cart">
-            <img
-              src="./assets/icons/icon_shopping_cart.svg"
-              alt="shopping cart"
-            />
-            <div>2</div>
-          </li>
-        </ul>
-      </div>
-      <div class="desktop-menu inactive">
-        <ul>
-          <li><a href="/" class="title">My orders</a></li>
-          <li><a href="/">My account</a></li>
-          <li><a href="/">sign out</a></li>
-        </ul>
-      </div>
-      <div class="mobile-menu inactive">
-        <ul>
-          <li><a href="/" class="title">CATEGORIES</a></li>
-          <li><a href="/">All</a></li>
-          <li><a href="/">Meditation</a></li>
-          <li><a href="/">House</a></li>
-          <li><a href="/">Sport</a></li>
-          <li><a href="/">Hobbies</a></li>
-          <li><a href="/">Others</a></li>
-        </ul>
-        <ul>
-          <li><a href="/">My orders</a></li>
-          <li><a href="/">My account</a></li>
-        </ul>
-        <ul>
-          <li><a href="/" class="email">example@example@gmail.com</a></li>
-          <li><a href="/" class="sign-out">Sign out</a></li>
-        </ul>
-      </div>
-    </nav>
-    <aside id="shoppingCartContainer" class="inactive">
+    <header class="header-container">
+      <nav>
+        <img src="./assets/icons/icon_menu.svg" alt="menu" class="menu" />
+        <div class="navbar-left">
+          <img
+            src="./assets/logos/logo_yard_sale.svg"
+            alt="logo"
+            class="logo"
+          />
+          <ul>
+            <li><a href="/" class="select">All</a></li>
+            <li><a href="/">Meditation</a></li>
+            <li><a href="/">House</a></li>
+            <li><a href="/">Sport</a></li>
+            <li><a href="/">Hobbies</a></li>
+            <li><a href="/">Others</a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <ul>
+            <li class="navbar-email">example@example@gmail.com</li>
+            <li class="navbar-shopping-cart">
+              <img
+                src="./assets/icons/icon_shopping_cart.svg"
+                alt="shopping cart"
+              />
+              <div class="product-count">0</div>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-menu inactive">
+          <ul>
+            <li><a href="/" class="title">My orders</a></li>
+            <li><a href="/">My account</a></li>
+            <li><a href="/">sign out</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="/">CATEGORIES</a></li>
+            <li><a href="/">All</a></li>
+            <li><a href="/">Meditation</a></li>
+            <li><a href="/">House</a></li>
+            <li><a href="/">Sport</a></li>
+            <li><a href="/">Hobbies</a></li>
+            <li><a href="/">Others</a></li>
+          </ul>
+          <ul>
+            <li><a href="/">My orders</a></li>
+            <li><a href="/">My account</a></li>
+          </ul>
+          <ul>
+            <li><a href="/" class="email">example@example@gmail.com</a></li>
+            <li><a href="/" class="sign-out">Sign out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside id="shoppingCartContainer">
       <div class="title-container">
-        <img src="./assets/icons/flechita.svg" alt="arrow" />
-        <h2 class="title">Shopping cart</h2>
+        <img
+          src="./assets/icons/flechita.svg"
+          alt="arrow"
+          class="arrow-close"
+        />
+        <h2 class="title">My order</h2>
       </div>
       <div class="my-order-content">
-        <div class="shopping-cart">
-          <figure>
-            <img src="./assets/images/candle.jpg" alt="candle" />
-          </figure>
-          <p>Soy Candle</p>
-          <p>$20,00</p>
-          <img src="./assets/icons/icon_close.png" alt="close" />
-        </div>
-        <div class="shopping-cart">
-          <figure>
-            <img src="/assets/images/plant.jpg" alt="candle" />
-          </figure>
-          <p>Plant</p>
-          <p>$25,00</p>
-          <img src="./assets/icons/icon_close.png" alt="close" />
-        </div>
-        <div class="shopping-cart">
-          <figure>
-            <img src="./assets/images/incense.jpg" alt="candle" />
-          </figure>
-          <p>Zen Incense Holder</p>
-          <p>$15,00</p>
-          <img src="./assets/icons/icon_close.png" alt="close" />
-        </div>
-        <div class="shopping-cart">
-          <figure>
-            <img src="./assets/images/teapot.jpg" alt="candle" />
-          </figure>
-          <p>Japanese Teapot</p>
-          <p>$59,00</p>
-          <img src="./assets/icons/icon_close.png" alt="close" />
-        </div>
+        <div class="shopping-container"></div>
         <div class="order">
           <p>
             <span>Total</span>
           </p>
-          <p>$ 150.00</p>
+          <p class="price-count">$0.00</p>
         </div>
         <button class="primary-button">Checkout</button>
       </div>
     </aside>
-    <aside id="productDetail" class="inactive">
+    <aside id="productDetail">
       <div class="product-detail-close">
         <img src="./assets/icons/icon_close.png" alt="close" />
       </div>
       <img src="./assets/images/plant.jpg" alt="plant" />
       <div class="product-info">
-        <p>$25,00</p>
-        <p>Plant</p>
-        <p>
-          With its functional and practical design, this plant also fulfills a
-          decorative function, adding personality and a retro-vintage aesthetic
-          to your house.
-        </p>
+        <p></p>
+        <p></p>
+        <p></p>
         <button class="primary-button add-cart-button">
           <img src="./assets/icons/bt_add_to_cart.svg" alt="add to cart" />
           Add to cart
         </button>
       </div>
     </aside>
-    <section class="main-container">
-      <div class="cards-container">
-        <!--<div class="product-card">
-          <img src="./assets/images/oil.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$15,00</p>
-              <p>Natural Oils</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/candle.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$20,00</p>
-              <p>Soy Candle</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/plant.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$25,00</p>
-              <p>Plant</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/incense.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$25,00</p>
-              <p>Zen Incense Holder</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/teapot.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$59,00</p>
-              <p>Japanese Teapot</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/sketchbook.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$49,00</p>
-              <p>Leather Sketchbook</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/meditation.png" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$79,00</p>
-              <p>Clock for meditation</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/diffusor.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$56,00</p>
-              <p>Esential Oil Diffuser</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/stones.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$20,00</p>
-              <p>Volcanic stones</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/puzzle.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$35,00</p>
-              <p>Wooden Puzzle 3D</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/yoga-wheel.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$29,00</p>
-              <p>Yoga & Pilates Wheel</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/wooden-briefcase.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$29,00</p>
-              <p>Wooden Briefcase</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/projector.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$29,00</p>
-              <p>Projector with white noises</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/garden.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$39,00</p>
-              <p>Zen Garden Set</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/japa-mala.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$29,00</p>
-              <p>Buddhist Japa Mala Beads</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/tibetan-singing-bowl.jpg" alt="" />
-          <div class="product-info">
-            <div>
-              <p>$45,00</p>
-              <p>Tibetan Singing Bowl</p>
-            </div>
-            <figure>
-              <img src="./assets/icons/bt_add_to_cart.svg" alt="cart" />
-            </figure>
-          </div>
-        </div>-->
-      </div>
-    </section>
+    <div class="darken"></div>
+    <main class="main-container">
+      <div class="cards-container"></div>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
