@@ -37,17 +37,21 @@
   .menu {
     display: none;
   }
-  .logo {
-    width: 100px;
-  }
   .navbar-left ul,
-  .navbar-right ul {
+  .navbar-right ul,
+  .logo {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     height: 60px;
+  }
+  .logo {
+    width: 100px;
+    height: 40px;
+    margin-top: 8px;
+    
   }
   .navbar-left {
     display: flex;
